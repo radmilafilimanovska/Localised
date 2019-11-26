@@ -1,0 +1,316 @@
+/* ================ NAVBAR ================= */
+
+nav{
+    padding: 10px;
+ }
+ .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand,.navbar-nav>li>a{
+     color: white;
+     font-size: 16px;
+ }
+ 
+ .navbar-nav>li{
+     margin-right: 20px;
+     margin-top: 10px;
+ }
+ .navbar-brand{
+     margin-top: 10px;
+ }
+ nav ul li .nav-a:hover {
+     color: cyan;
+     background-color: transparent;
+     border-top: 2px solid cyan;
+ 
+ }
+ 
+ nav ul li .nav-a:active {
+     color: cyan;
+     background-color: transparent;
+     border-top: 2px solid cyan;
+ }
+ 
+ nav ul li .nav-a:focus {
+     color: cyan;
+     background-color: transparent;
+     border-top: 2px solid cyan;
+ } 
+ #hireBtnServices{
+    background: cyan;
+}
+#hireBtnServices:hover{
+    background-color: dimgrey;
+}
+
+.navbar-nav>li>a:hover {
+    background: transparent;
+}
+.navbar-toggle .icon-bar{
+   background: white;
+}
+.f-family{
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+/* ================== SERVICES ================= */
+
+
+.bgLinear {
+
+    height: 630px;
+    background: white;
+    -webkit-box-shadow: 5px 3px 35px -1px rgba(54,54,54,0.8);
+    -moz-box-shadow: 5px 3px 35px -1px rgba(54,54,54,0.8);
+    box-shadow: 5px 3px 35px -1px rgba(54,54,54,0.8);
+    position: relative;
+    
+   
+}
+.bgCyan{
+    background: linear-gradient(68deg, transparent 25%, cyan 25%);
+    position: absolute;
+    top: 260px;
+    right: 0;
+    /* width: 700px; */
+    min-height: 0px;
+    max-height: 600px;
+    overflow-y: scroll;
+    
+}
+
+.ulDecNone{
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
+    width: 170px;
+}
+
+.gifTape{
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+    position: absolute;
+    
+}
+.gifTape img{
+    width: 400px;
+    position: relative;
+    /* bottom: 50px; */
+}
+.bgService{
+    background-image: url(../images/setviceBg.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+#hireBtnServices{
+    background: cyan;
+}
+
+
+.active{
+    color:white;
+    background: cyan;  
+}
+
+.coding ul li,.marketing ul li, .branding ul li {
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: right;  
+}
+
+.cursor-p{
+    cursor: pointer;
+}
+
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.mt-60{
+    margin-top:60px;
+}
+.mt-40{
+    margin-top:40px;
+}
+
+.line-height-40{
+    line-height: 40px; 
+} 
+
+.txtFont{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ls-1{
+    letter-spacing: 1px;
+}
+.mtNeg-170{
+    margin-top: -170px;
+}
+
+/* ============== MENU-MOBILE ============== */
+.navbar-toggle .icon-bar{
+    background: white;
+ }
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #292929;
+    overflow-y: hidden;
+    transition: 1s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay-menu {
+  line-height: 2.5;
+  list-style-type: none;
+  padding-left: 0;
+
+}
+.overlay a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    font-size: 60px;
+}
+
+.navBrand-media {
+    padding: 8px;
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    font-size: 22px;
+    text-transform: capitalize;
+    background-color: white;
+    color: black !important;
+}
+
+.media-overlay-button {
+  padding: 15px 145px !important;
+}
+
+#hireBtnMobile{
+    background-image: linear-gradient(to right, #ff0000, #fa3100, #f54701, #f05608, #eb6312);
+}
+
+/* ================ MEDIA ================ */
+
+@media only screen and (max-width: 1280px){
+  
+    .mt-40-1280{
+        margin-top:40px;
+    }
+    .gifTape img{
+        width: 340px;
+    }
+    .coding ul li,.marketing ul li, .branding ul li {
+        font-size: 16px;
+    }
+    .liCoding,.liMarketing,.liBranding{
+        font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1024px){
+  
+    .bgLinear{
+        height: 660px;
+    }
+  
+}
+@media only screen and (max-width: 991px){
+    .gifTape{
+        display: none;
+    }
+    .mtNegNone-170-media{
+        margin-top: 0;
+    }
+    
+    .mb-30-991 {
+        margin-bottom: 30px;
+    }
+    .coding ul li,.marketing ul li, .branding ul li{
+       line-height: 30px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .txtCenterMobile{
+        font-size: 30px;
+    }
+    .bgLinear{
+        height: 790px;
+    }
+  
+}
+@media only screen and (max-width:425px){
+
+    .overlay a {
+        font-size: 16px;
+    }
+    .txtCenterMobile{
+        font-size: 28px;
+        margin-top:20px;
+        text-align: center;
+    }
+    .coding ul li,.marketing ul li, .branding ul li{
+        text-align: left;  
+        font-size: medium;
+    }
+    .coding ul ,.marketing ul , .branding ul {
+      padding: 0;
+    }
+    .mt-100-media{
+        margin-top: 100px;
+    }
+    .mt-60-media{
+        margin-top: 60px;
+    }
+    .bgCyan{
+        background: cyan;
+        
+    }
+    .fz-20-mobile{
+        font-size: 20px;
+    }
+    .mb-20-425{
+        margin-bottom: 20px;
+
+    }
+
+}
+@media only screen and (max-width:375px){
+    .media-overlay-button {
+        padding: 15px 120px !important;
+    }
+}
+
+@media only screen and (max-width:320px){
+
+    .media-overlay-button {
+        padding: 15px 100px !important;
+      }
+}

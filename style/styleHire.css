@@ -1,0 +1,204 @@
+/* ======================= NAVBAR ====================*/
+nav{
+    padding: 10px;
+ }
+ .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand,.navbar-nav>li>a{
+     color: white;
+     font-size: 16px;
+ }
+ 
+ .navbar-nav>li{
+     margin-right: 20px;
+     margin-top: 10px;
+ }
+ .navbar-brand{
+     margin-top: 10px;
+ }
+
+ .nav>li>a:hover{
+     background: dimgray;
+ }
+ nav ul li .nav-a:hover {
+     color: red;
+     background-color: transparent;
+     border-top: 2px solid red;
+ 
+ }
+ 
+ nav ul li .nav-a:active {
+     color: red;
+     background-color: transparent;
+     border-top: 2px solid red;
+ }
+ 
+ nav ul li .nav-a:focus {
+     color: red;
+     background-color: transparent;
+     border-top: 2px solid red;
+ }
+
+ #hireBtn{
+    background: red;
+}
+#hireBtn:hover{
+    background-color: dimgrey;
+}
+
+
+/*=============== HIRE US PAGE =================*/
+.bgHire{
+    background-image: url('../images/hire.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.hireOverlay{
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+}
+  
+.flexHire{
+    display: flex;
+    align-items: center;
+}
+
+.hireTitle{
+    font-weight: bold;
+    color:white;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.cursor:hover{
+    color: red;
+    font-size: 16px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.redTxt{
+    color: red;
+}
+.ls-1{
+    letter-spacing: 1px;
+}
+
+
+/* MENU-MOBILE */
+.navbar-toggle .icon-bar{
+    background: white;
+ }
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #292929;
+    overflow-y: hidden;
+    transition: 1s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay-menu {
+  line-height: 2.5;
+  list-style-type: none;
+  padding-left: 0;
+
+}
+.overlay a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    font-size: 60px;
+}
+
+.navBrand-media {
+    padding: 8px;
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    font-size: 22px;
+    text-transform: capitalize;
+    background-color: white;
+    color: black !important;
+}
+
+.media-overlay-button {
+  padding: 15px 145px !important;
+}
+#hireBtnMobile{
+    background-image: linear-gradient(to right, #ff0000, #fa3100, #f54701, #f05608, #eb6312);
+}
+
+/* ============= MEDIA ============ */
+
+@media only screen and (max-width:768px){
+    .mt-60-media{
+        margin-top: 60px;
+    }
+    .m-mb-20{
+        margin-bottom: 20px;
+    }
+    .m-mb-40{
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-width:425px){
+    .hireTitle{
+        font-size:18px; 
+    }
+    .bb-media{
+        border-bottom: 1px solid white;
+    }
+    .overlay a {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width:375px){
+    .media-overlay-button {
+        padding: 15px 120px !important;
+      }
+    .hireTitle{
+        font-size:17px; 
+    }
+}
+
+@media only screen and (max-width:320px){
+
+    .media-overlay-button {
+        padding: 15px 100px !important;
+      }
+    .hireTitle{
+        font-size:15px; 
+    }
+}

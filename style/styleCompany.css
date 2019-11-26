@@ -1,0 +1,378 @@
+/* =============== NAVBAR =============== */
+
+nav{
+    padding: 10px;
+    transition: all .5s ease-in-out 0s;
+ }
+ .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand,.navbar-nav>li>a{
+     color: white;
+     font-size: 16px;
+ }
+ 
+ .navbar-nav>li{
+     margin-right: 20px;
+     margin-top: 10px;
+ }
+ .navbar-brand{
+     margin-top: 10px;
+ }
+ nav ul li .nav-a:hover {
+     color: cyan;
+     background-color: transparent;
+     border-top: 2px solid cyan;
+ 
+ }
+ 
+ nav ul li .nav-a:active {
+     color: cyan;
+     background-color: transparent;
+     border-top: 2px solid cyan;
+ }
+ 
+ nav ul li .nav-a:focus {
+     color: cyan;
+     background-color: transparent;
+     border-top: 2px solid cyan;
+ } 
+ #hireBtn{
+    background: cyan;
+}
+#hireBtn:hover{
+    background-color: dimgrey;
+}
+
+.navbar-nav>li>a:hover {
+    background: transparent;
+}
+.navbar-toggle .icon-bar{
+   background: white;
+}
+
+/* =================== COMPANY PAGE ==================== */
+#bg{
+    background-color:rgb(195, 218, 255);
+}
+.mt-100{
+    margin-top: 100px;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+.bgCompanyOne,.bgCompanyTwo,.bgCompanyThree{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.bgCompanyOne{
+    background-image: url(../images/company1.jpeg);
+
+}
+.bgCompanyTwo{
+    background-image: url(../images/redmond.jpeg);
+
+}
+.bgCompanyThree{
+    background-image: url(../images/company3.jpeg);
+
+}
+
+
+.lorem{
+    line-height: 30px;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon-red{
+    color: red;
+}
+
+.mr-10{
+    margin-right: 10px;
+}
+
+.ls-1{
+    letter-spacing: 1px;
+}
+.footer-txt:hover{
+    color:grey;
+    text-decoration: none;
+}
+
+.lh-30{
+    line-height: 30px;
+}
+
+.br-1{
+    border-right: 1px solid grey;
+}
+
+.h-60{
+    height: 600px;
+}
+.mt-150{
+    margin-top: 150px;
+}
+.mt-250{
+    margin-top: 250px;
+}
+.f-family{
+    font-family: 'Arial';
+    font-weight: bold;
+}
+.companyName{
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: rgb(37, 133, 212);
+    letter-spacing: 5px;;
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+
+.shadow{
+    -webkit-box-shadow: 5px 8px 48px -5px rgba(0,103,105,1);
+    -moz-box-shadow: 5px 8px 48px -5px rgba(0,103,105,1);
+    box-shadow: 5px 8px 48px -5px rgba(0,103,105,1);
+    padding: 20px;
+}
+.blink {
+    -webkit-animation: blink 4s linear infinite;
+    -moz-animation: blink 4s linear infinite;
+    animation: blink 4s linear infinite;
+
+}
+
+.btnCompany{
+    padding: 20px;
+    border: 1px solid blue;
+    color: white;
+    background: #4074b5;
+}
+
+.btnCompany:hover,.btnCompany:active,.btnCompany:focus{
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+} 
+
+
+/* =============== CLOCK ================ */
+.clock{
+    background-image: url(../images/clock.png);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ 
+ .clock-face{
+     position: relative;
+     width: 100%;
+     height: 100%;
+     transform: translateY(-3px);
+ 
+ }
+  .hand{
+     position: absolute;
+     width: 50%;
+     height: 6px;
+     top: 50%;
+     transform-origin: 95%;
+     transform:rotate(90deg);
+   
+ } 
+ .hour-hand,.hour-hand1,.hour-hand2,.hour-hand3,.hour-hand4,.hour-hand5,
+ .minutes-hand,.minutes-hand1,.minutes-hand2,.minutes-hand3,.minutes-hand4,.minutes-hand5 {
+     margin-left: 20px;
+     width: 15px;
+     height: 3px;
+     background: red;
+     position: absolute;
+     top: 50%;
+     transform-origin: 100%;
+     transform: rotate(90deg);
+ 
+ }
+ 
+ .seconds-hand,.seconds-hand1,.seconds-hand2,.seconds-hand3,.seconds-hand4,.seconds-hand5{
+   background-color: rgb(0, 0, 0);
+   height: 1px;
+   margin:1px;
+   
+ 
+ }
+ 
+ .flexBetween{
+     margin-top: 30px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .clockTxt{
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold;
+     font-size: 16px;
+ }
+
+ /* ================== MENU-MOBILE ================== */
+.navbar-toggle .icon-bar{
+    background: white;
+ }
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #292929;
+    overflow-y: hidden;
+    transition: 1s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay-menu {
+  line-height: 2.5;
+  list-style-type: none;
+  padding-left: 0;
+
+}
+.overlay a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    font-size: 60px;
+}
+
+.navBrand-media {
+    padding: 8px;
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    font-size: 22px;
+    text-transform: capitalize;
+    background-color: white;
+    color: black !important;
+}
+
+.media-overlay-button {
+  padding: 15px 145px !important;
+}
+#hireBtnMobile{
+    background-image: linear-gradient(to right, #ff0000, #fa3100, #f54701, #f05608, #eb6312);
+}
+
+
+/*==================== MEDIA ====================*/
+
+@media only screen and (max-width: 1024px){
+    .mt-150-1024{   
+        margin-top: 150px;
+    }
+    .mt-200-1024{
+        margin-top: 200px;
+    }
+    .fz-16-media{
+        font-size: 16px;
+    }
+    .fs-media{
+        font-size: 22px;
+    }
+
+}
+@media only screen and (max-width: 991px){
+   .h-40-tablet{
+        height: 400px;
+   }
+
+}
+
+@media only screen and (max-width: 768px){
+    .companyName{
+        font-size: 35px;
+    }
+
+    .mt-50-media{
+        margin-top: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 425px){
+    .mt-100-media{
+        margin-top: 50px;
+    }
+    .overlay a {
+        font-size: 16px;
+    }
+    .fs-11{
+        font-size: 11px;
+    }
+    .companyName{
+        font-size: 25px;
+    }
+   
+   
+    .btnCompany{
+        font-size: 12px;
+        padding: 13px;
+    }
+}
+@media only screen and (max-width:375px){
+    .media-overlay-button {
+        padding: 15px 120px !important;
+    }
+}
+
+
+@media only screen and (max-width: 320px){
+    .mt-100-media{
+        margin-top: 300px;
+    }
+    .media-overlay-button {
+        padding: 15px 100px !important;
+    }
+    .btnCompany{
+        font-size: 11px;
+    }
+}
